@@ -40,6 +40,15 @@ public interface Call400Facade {
 	@GET
 	@Path("/query400CallsToday")
 	public List<JSONObject> query400CallsToday() throws Exception;
+	
+	/**
+	 * 
+	 * <b>方法名称：</b>查询ERP工单当天的数据，并返回list<br>
+	 * <b>概要说明：</b><br>
+	 */
+	@GET
+	@Path("/queryERPCallsToday")
+	public List<JSONObject> queryERPCallsToday() throws Exception;
 
 	/**
 	 * 
@@ -47,6 +56,13 @@ public interface Call400Facade {
 	 * <b>概要说明：</b><br>
 	 */
 	public int singleInsert2Opp(JSONObject jsonObject) throws Exception;
+	
+	/**
+	 * 
+	 * <b>方法名称：</b>更新ERP商机信息<br>
+	 * <b>概要说明：</b><br>
+	 */
+	public int updateERPInfo(JSONObject jsonObject,JSONObject whereKey) throws Exception;
 	
 	/**
 	 * 
