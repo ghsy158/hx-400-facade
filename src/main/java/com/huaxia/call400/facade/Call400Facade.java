@@ -18,7 +18,7 @@ import com.alibaba.fastjson.JSONObject;
 public interface Call400Facade {
 
 	/**
-	 * <b>方法名称：</b>查询400工单信息<br>
+	 * <b>方法名称：</b>查询400所有工单信息<br>
 	 * <b>概要说明：</b><br>
 	 */
 	@GET
@@ -27,7 +27,7 @@ public interface Call400Facade {
 
 	/**
 	 * 
-	 * <b>方法名称：</b>插入到ERP商机表<br>
+	 * <b>方法名称：</b>批量插入到ERP商机表<br>
 	 * <b>概要说明：</b><br>
 	 */
 	public void batchInsert2Opp(String json) throws Exception;
